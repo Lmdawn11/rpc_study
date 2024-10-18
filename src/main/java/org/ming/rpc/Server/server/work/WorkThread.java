@@ -1,9 +1,9 @@
 package org.ming.rpc.Server.server.work;
 
 import lombok.AllArgsConstructor;
-import org.ming.part1.Server.provider.ServiceProvider;
-import org.ming.part1.common.Message.RpcRequest;
-import org.ming.part1.common.Message.RpcResponse;
+import org.ming.rpc.Server.provider.ServiceProvider;
+import org.ming.rpc.common.Message.RpcRequest;
+import org.ming.rpc.common.Message.RpcResponse;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

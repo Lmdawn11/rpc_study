@@ -1,9 +1,9 @@
 package org.ming.rpc.Server.server.impl;
 
 import lombok.AllArgsConstructor;
-import org.ming.part1.Server.provider.ServiceProvider;
-import org.ming.part1.Server.server.RpcServer;
-import org.ming.part1.Server.server.work.WorkThread;
+import org.ming.rpc.Server.provider.ServiceProvider;
+import org.ming.rpc.Server.server.RpcServer;
+import org.ming.rpc.Server.server.work.WorkThread;
 
 import java.io.IOException;
 import java.net.ServerSocket;
