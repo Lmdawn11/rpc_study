@@ -3,14 +3,20 @@ package org.ming.rpc.common.mycode;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
+import lombok.extern.slf4j.Slf4j;
 import org.ming.rpc.common.Message.MessageType;
 import org.ming.rpc.common.mySerializer.Serializer;
 
 import java.util.List;
 
+import static org.ming.rpc.utils.ByteBufferUtil.debugAll;
+
+@Slf4j
 public class MyDecoder extends ByteToMessageDecoder {
     @Override
     protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf in, List<Object> out) throws Exception {
+        log.debug("decode data....");
+        debugAll(in.nioBuffer());
         //1.读取消息类型
         short messageType = in.readShort();
         // 现在还只支持request与response请求
