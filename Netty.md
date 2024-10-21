@@ -77,7 +77,7 @@ serverSocketChannel.bind(new InetSocketAddress(8080));
 
 # netty的启动流程
 
- ![image-20241017160237808](assets/image-20241017160237808.png)
+ ![image-20241017160237808](D:\typora\image-20241017160237808.png)
 
 # eventloop的selector何时创建  
 
@@ -172,7 +172,7 @@ serverSocketChannel.bind(new InetSocketAddress(8080));
 
 # RPC项目架构
 
- ![image-20241017173107727](assets/image-20241017173107727.png)
+ ![image-20241017173107727](C:\Users\liming\AppData\Roaming\Typora\typora-user-images\image-20241017173107727.png)
 
 ## 1.基础模型
 
